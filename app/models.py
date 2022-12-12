@@ -1,5 +1,5 @@
 from datetime import datetime
-from app import app, db
+from app import db
 
 
 class User(db.Model):
@@ -20,6 +20,3 @@ class Post(db.Model):
 
     def __repr__(self):
         return f'<Post {self.body}>'
-
-# with app.app_context():
-#     db.create_all(app)
